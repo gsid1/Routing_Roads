@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Simple Leaflet Map</title>
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+   crossorigin=""/>
+        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+   crossorigin=""></script>
+        <link rel="stylesheet" href="index.css">
+        
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+        <script src="index.js"></script>
+    </head>
+
+    <body>
+        
+        <div id="input">
+            <h1 id="title_name" > Routing Roads </h1>
+            <div id="src_ui">
+                <label> Source : </label>
+                <br>
+                <br>
+                <select id="source" oninput="sourceChange()"><option value="0">-</option></select>
+                <!-- <p id="sourceError" style="color:red"></p> -->
+            </div>
+            <div id="des_ui">
+                <label>Destination :</label>
+                <br>
+                <br>
+                <select id="destination" oninput="destinationChange()"><option value="0">-</option></select>
+                <!-- <p id="destinationError" style="color:red"></p> -->
+            </div>
+            <div id="algo_ui">
+                <label>Algorithm :</label>
+                <br>
+                <br>
+                <select id="algo" oninput="shortestPath()">
+                    <option value="1">Dijkstra</option>
+                    <option value="2" selected="selected">A*</option>
+                </select>
+            </div>
+            <!-- <div id="time_ui">
+                <label> Time Taken : </label>
+                <p id="time_taken"></p>
+            </div> -->
+        </div>
+        <div id="mapid" style="z-index: 2;"></div>
+    </body>
+</html>

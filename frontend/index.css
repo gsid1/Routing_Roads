@@ -1,0 +1,52 @@
+#mapid {
+    height: 100%;
+    width : 78%;
+    margin: 0;
+    padding: 0;
+}
+
+#input{
+    position: fixed;
+    height:100%;
+    width: 19%;
+    right: 0px; 
+    top: 0px;
+    z-index: 4;
+    bottom: 0;
+    background: #191818;
+    overflow-y: auto;
+    padding-left: 50px;
+}
+
+label, select, option, p{
+    color: white;
+    background-color: #191818;
+    
+    font-family: "Lucida Console", monospace;
+    margin-bottom: 95px;
+}
+
+h1{
+    margin-top: 90px;
+    font-size: 170%;
+    font-family: "Lucida Handwriting", cursive;
+    color: white;
+    background-color: #191818;
+    margin-bottom: 50px;
+}
+
+select {
+    width: 90%;
+    color: black;
+    font-size: 95%;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #f1f1f1;
+  }
+
+html, body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
